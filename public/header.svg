@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   width="217.96121mm"
+   height="53.249317mm"
+   viewBox="0 0 217.96121 53.249317"
+   version="1.1"
+   id="svg1"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <defs
+     id="defs1" />
+  <g
+     id="layer1"
+     transform="translate(3.6101234,-117.78028)">
+    <rect
+       style="fill:#f8fafc;fill-opacity:1;stroke-width:0.264583"
+       id="rect5"
+       width="217.96121"
+       height="53.249321"
+       x="-3.6101234"
+       y="117.78028" />
+    <path
+       id="path1-3"
+       style="fill:#ef4444;fill-opacity:1;stroke-width:0.169833"
+       d="m 192.248,127.26372 a 16.81567,16.81567 0 0 1 16.81577,16.81577 16.81567,16.81567 0 0 1 -16.81577,16.81543 16.81567,16.81567 0 0 1 -8.35165,-2.22474 16.81567,16.81567 0 0 0 8.46411,-14.59069 16.81567,16.81567 0 0 0 -8.46411,-14.59069 16.81567,16.81567 0 0 1 8.35165,-2.22508 z" />
+    <path
+       id="path1-9"
+       style="fill:#3b82f6;fill-opacity:1;stroke-width:0.169833"
+       d="m 175.54582,127.264 a 16.81567,16.81567 0 0 1 8.35166,2.22507 16.81567,16.81567 0 0 0 -8.46411,14.5907 16.81567,16.81567 0 0 0 8.46411,14.59068 16.81567,16.81567 0 0 1 -8.35166,2.22507 16.81567,16.81567 0 0 1 -16.81576,-16.81575 16.81567,16.81567 0 0 1 16.81576,-16.81577 z" />
+    <path
+       id="path1-3-3"
+       style="fill:#22c55e;fill-opacity:1;stroke-width:0.169833"
+       d="m 183.89722,129.48839 a 16.81567,16.81567 0 0 1 8.4641,14.59069 16.81567,16.81567 0 0 1 -8.4641,14.59069 16.81567,16.81567 0 0 1 -8.46411,-14.59069 16.81567,16.81567 0 0 1 8.46411,-14.59069 z" />
+    <text
+       xml:space="preserve"
+       style="font-size:25.4px;writing-mode:lr-tb;direction:ltr;fill:#000000;fill-opacity:1;stroke-width:0.264583"
+       x="-0.45844266"
+       y="152.72499"
+       id="text4"><tspan
+         id="tspan4"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:25.4px;font-family:NewComputerModern08;-inkscape-font-specification:NewComputerModern08;stroke-width:0.264583"
+         x="-0.45844266"
+         y="152.72499">Segmentation</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-size:25.4px;writing-mode:lr-tb;direction:ltr;fill:#ffffff;fill-opacity:1;stroke-width:0.264583"
+       x="160.82721"
+       y="152.44525"
+       id="text5"><tspan
+         id="tspan5"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-family:NewComputerModern08;-inkscape-font-specification:NewComputerModern08;fill:#ffffff;stroke-width:0.264583"
+         x="160.82721"
+         y="152.44525">Lab</tspan></text>
+  </g>
+</svg>

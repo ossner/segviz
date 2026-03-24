@@ -41,7 +41,7 @@ export const SEGMENTATION_METRICS: MetricDefinition[] = [
   },
   {
     id: 'precision',
-    name: 'Precision',
+    name: 'Precision (Specificity/PPV)',
     calculate: ({ gt, pred }) => {
       const { tp, fp } = getConfusionMatrix(gt, pred);
       if (tp + fp === 0) return 0.0;
@@ -50,7 +50,7 @@ export const SEGMENTATION_METRICS: MetricDefinition[] = [
   },
   {
     id: 'recall',
-    name: 'Recall (Sensitivity)',
+    name: 'Recall (Sensitivity/TPR)',
     calculate: ({ gt, pred }) => {
       const { tp, fn } = getConfusionMatrix(gt, pred);
       if (tp + fn === 0) return 0.0;
@@ -99,6 +99,14 @@ export const SEGMENTATION_METRICS: MetricDefinition[] = [
         loss += -(y * Math.log(yHat) + (1 - y) * Math.log(1 - yHat));
       }
       return loss / gt.length;
+    }
+  },
+  {
+    id: 'accuracy',
+    name: 'Accuracy',
+    calculate: ({ gt, pred }) => {
+      const { tp, fp, fn, tn } = getConfusionMatrix(gt, pred);
+      return (tp + tn) / (tp + fp + fn + tn);
     }
   },
 ];

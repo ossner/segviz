@@ -49,22 +49,22 @@ export const App: React.FC = () => {
     const modalData = persistedId ? METRIC_RICH_CONTENT[persistedId] : null;
     return (
         <div style={{ display: 'flex', flexDirection: 'column', minHeight: '100vh' }}>
-            <div style={{ display: 'flex', gap: '3rem', padding: '2rem', flex: '0 0 auto' }}>
+            <div style={{ display: 'flex', gap: '3rem', padding: '1rem', flex: '0 0 auto' }}>
 
                 {/* Top Left */}
                 <div style={{ display: 'flex', flexDirection: 'column', gap: '1.5rem' }}>
                     <header>
-                        <h1 style={{ margin: 0, fontSize: '1.5rem' }}>Segmentation Lab</h1>
+                        <h1 style={{ margin: '0rem', fontSize: '1.5rem' }}>Segmentation Lab <img src='/favicon.svg' style={{width: '7%', marginTop:'0px', marginBottom: '-2px'}}></img></h1>
                     </header>
 
-                    <div style={{ display: 'flex', justifyContent: 'center', gap: '3rem', background: '#ffffff', padding: '0.5rem', borderRadius: '8px' }}>
+                    <div style={{ display: 'flex', justifyContent: 'center', gap: '3rem', background: '#ffffff', padding: '0rem', borderRadius: '8px' }}>
                         <label style={{ fontSize: '0.9rem', fontWeight: 'bold' }}>
                             Grid: {gridSize} x {gridSize}
-                            <input type="range" min="16" max="128" step="16" value={gridSize} onChange={e => setGridSize(Number(e.target.value))} style={{ display: 'block', marginTop: '5px' }} />
+                            <input type="range" min="16" max="128" step="16" value={gridSize} onChange={e => setGridSize(Number(e.target.value))} style={{ display: 'block', marginTop: '1px' }} />
                         </label>
                         <label style={{ fontSize: '0.9rem', fontWeight: 'bold' }}>
                             Brush: {brushSize} x {brushSize}
-                            <input type="range" min="1" max="10" step="1" value={brushSize} onChange={e => setBrushSize(Number(e.target.value))} style={{ display: 'block', marginTop: '5px' }} />
+                            <input type="range" min="1" max="10" step="1" value={brushSize} onChange={e => setBrushSize(Number(e.target.value))} style={{ display: 'block', marginTop: '1px' }} />
                         </label>
                     </div>
 
@@ -91,12 +91,12 @@ export const App: React.FC = () => {
                 </div>
 
                 {/* Top Right */}
-                <div style={{ flex: 1, height: '750px' }}>
+                <div style={{ flex: 1, height: '700px' }}>
                     <MetricsPanel gt={gtData} pred={predData} onShowInfo={handleOpenModal} />
                 </div>
             </div>
             <div>
-                <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: '2rem', padding: '0 2rem 2rem 2rem' }}>
+                <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: '2rem', padding: '0 2rem 2rem 3rem' }}>
                     {/* Bottom Left */}
                     <ConfusionMatrix gt={gtData} pred={predData} />
 

@@ -19,7 +19,7 @@ export const ConfusionMatrix: React.FC<ConfusionMatrixProps> = ({ gt, pred }) =>
   const cellStyle = (bgColor: string, textColor: string = 'white'): React.CSSProperties => ({
     backgroundColor: bgColor,
     color: textColor,
-    padding: '1.5rem',
+    padding: '1.25rem',
     borderRadius: '8px',
     display: 'flex',
     flexDirection: 'column',

@@ -25,7 +25,7 @@ export const InfoModal: React.FC<InfoModalProps> = ({ isOpen, onClose, title, ch
             position: 'relative',
             inset: 'auto',
             width: '90%',
-            maxWidth: '650px',
+            maxWidth: '750px',
             maxHeight: '85vh',
             border: '1px solid #e2e8f0',
             background: '#ffffff',
@@ -77,7 +77,7 @@ export const InfoModal: React.FC<InfoModalProps> = ({ isOpen, onClose, title, ch
             </div>
 
             {/* Modal Body - Where the rich React Nodes render */}
-            <div style={{ padding: '1.5rem', color: '#334155', lineHeight: 1.6 }}>
+            <div style={{ padding: '0rem 1.5rem 1rem', color: '#334155', lineHeight: 1.6 }}>
                 {children}
             </div>
 
