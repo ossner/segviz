@@ -1,6 +1,5 @@
 import React from 'react';
 import { BlockMath, InlineMath } from 'react-katex';
-import 'katex/dist/katex.min.css';
 
 export interface MetricDefinitionRich {
     title: string;
@@ -16,12 +15,12 @@ export const METRIC_RICH_CONTENT: Record<string, MetricDefinitionRich> = {
                     The Dice Coefficient <InlineMath math="DSC" /> is a statistical tool used to gauge the similarity of two samples. In image segmentation, it measures the overlap between the segmented mask (<InlineMath math="X" />) and the ground truth (<InlineMath math="Y" />).
                 </p>
 
-                <BlockMath math="DSC = \\frac{2 |X \\cap Y|}{|X| + |Y|}" />
+                <BlockMath math={String.raw`DSC = \frac{2 |X \cap Y|}{|X| + |Y|}`} />
 
                 <div style={{ background: '#f8fafc', padding: '1rem', borderRadius: '8px', border: '1px solid #e2e8f0', textAlign: 'center' }}>
                     <h4>Confusion Matrix Formula</h4>
                     <div style={{ display: 'flex', justifyContent: 'center', gap: '3em' }}>
-                        <BlockMath math="DSC = \\frac{2*TP}{2*TP + FP + FN}" />
+                        <BlockMath math={String.raw`DSC = \frac{2*TP}{2*TP + FP + FN}`} />
 
                         <div style={{ display: 'inline-flex', flexDirection: 'column', alignItems: 'center' }}>
                             {/* Numerator */}
@@ -90,12 +89,12 @@ export const METRIC_RICH_CONTENT: Record<string, MetricDefinitionRich> = {
                     The IoU <InlineMath math="IoU" /> is the standard metric for object detection and semantic segmentation challenges. It calculates the ratio of the intersection area to the union area of the two masks.
                 </p>
 
-                <BlockMath math="IoU = \frac{\text{Area of Overlap}}{\text{Area of Union}} = \frac{|X \cap Y|}{|X \cup Y|}" />
+                <BlockMath math={String.raw`IoU = \frac{\text{Area of Overlap}}{\text{Area of Union}} = \frac{|X \cap Y|}{|X \cup Y|}`} />
 
                 <div style={{ background: '#f8fafc', padding: '1rem', borderRadius: '8px', border: '1px solid #e2e8f0', textAlign: 'center' }}>
                     <h4>Confusion Matrix Formula</h4>
                     <div style={{ display: 'flex', justifyContent: 'center', gap: '3em' }}>
-                        <BlockMath math="IoU = \frac{TP}{TP + FP + FN}" />
+                        <BlockMath math={String.raw`IoU = \frac{TP}{TP + FP + FN}`} />
 
                         <div style={{ display: 'inline-flex', flexDirection: 'column', alignItems: 'center' }}>
                             {/* Numerator */}
